@@ -1,0 +1,247 @@
+                          <!-- Abduvohidov Mirabbosbek
+                               M311022B113
+///////1-masala///////
+
+#include <iostream>
+
+using namespace std;
+
+int main(){
+  int s,a=7;
+  int vaqt;
+  cout<<"s = "; cin>>s;
+
+  vaqt=s/a;
+
+  cout<<"necha soatda bosib o'tgani :"<<vaqt<<endl;
+
+  main();
+  return 0;
+}
+
+
+//////2-masala//////
+
+yoq
+
+
+//////3-masala///////
+
+#include <iostream>
+
+using namespace std;
+
+int main(){
+  int a,sum=0,c;
+  cout<<"a = "; cin>>a;
+  if(a>99 && a>=999){
+    for(int i=1; i<=a; i++){
+      if(i%3==0 && i%5==0){
+        sum++;
+    }
+  }
+   cout<<"3ga va 5ga qoldiqli bo'linadiganlar : "<<sum<<endl;
+  }
+  return 0;
+}
+
+///////4-masala//////
+
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    
+   int a,sum=0;
+   cout<<"a = "; cin>>a;
+
+      while(a>0){
+         cout<<"a = "; cin>>a;
+          sum++;
+
+         }
+     cout<<sum<<endl;
+
+   main();
+   return 0;
+}
+/////5-masala///
+yoq
+
+
+///6-masala///
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+float funksiya(float a,float b){
+  float c;
+  c=sqrt((a*b));
+  
+  return c;
+}
+int main(){
+    
+    float a,b;
+    cout<<"a = "; cin>>a;
+    cout<<"b = "; cin>>b;
+
+    cout<<funksiya(a,b)<<endl;
+    
+    main();
+    return 0;
+} -->
+<!-- 
+                           Abduvohidov Mirabbosbek F1  2-modul
+                          Bilet raqami : B281122F116
+///////////////1-javob////////////////
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main(){
+
+  ///1$ ->11300 so'm
+
+ for(int i=10; i<=40; i++){
+     cout<<i<<" $ = "<<i*11300<<" so'm"<<endl;
+ }
+
+
+ return 0;
+}
+
+////////////2-javob/////////////////
+
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main(){
+ int n;
+ cout<<"son kiriting : "; cin>>n;
+
+ for(int i=0; i<=n; i++){
+    for(int j=0; j<i; j++){
+        cout<<i<<"  ";
+    }
+     cout<<endl;
+   }
+   
+ main();
+ return 0;
+}
+////////////////3-javob///////////////////
+
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main(){
+ int n;
+ cout<<"1chi arreyning uzunligi : "; cin>>n;
+ int arr[n];
+
+ srand(time(NULL));
+ for(int i=0; i<n; i++){
+    arr[i]=rand()%10;
+    cout<<arr[i]<<"  ";
+ }
+ cout<<endl;
+ for(int i=0; i<n; i++){
+    if(arr[i]>0){
+      cout<<arr[i]<<endl;
+    }else{
+      cout<<arr[i]<<endl;
+    }
+ }
+cout<<endl;
+ 
+ main();
+ return 0;
+}
+
+////////////////////4-javob////////////////////
+
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main(){
+ int m,n;
+ cout<<"1chi arreyning uzunligi : "; cin>>m;
+ cout<<"2chi arreyning uzunligi : "; cin>>n;
+ int arr[m][n];
+
+ srand(time(NULL));
+ for(int i=0; i<m; i++){
+    for(int j=0; j<n; j++){
+        arr[i][j]=rand()%10;
+        cout<<arr[i][j]<<"  ";
+    }
+    cout<<endl;
+ }
+ int maxx;
+ for(int i=0; i<m; i++){
+    for(int j=0; j<n; j++){
+      if(arr[i][j]>maxx){
+        maxx=arr[i][j];
+
+      }
+      maxx=0;
+    }
+ }
+ cout<<"eng katta elementi : "<<maxx<<endl;
+
+ main();
+ return 0;
+}
+///////////////////////5-javob////////////////////////
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main(){
+
+ string s1;
+ int sum=0;
+ cout<<"satr : "; getline(cin, s1);
+
+ for(int i=0; i<s1.size(); i++){
+    if(toupper(s1[i])=='A'){
+        sum++;
+    }
+ }
+ cout<<"a harfining soni :"<<sum<<endl;
+
+ main();
+ return 0;
+}
+
+
+//////////////////////6-javob/////////////////////////////
+#include <bits/stdc++.h>
+
+using namespace std;
+
+string satr(string s1){
+ string s2=s1.substr(2,2)+s1.substr(s1.size()-1)+s1.substr(7,7);
+  return s2;
+}
+int main(){
+ string s1;
+ cout<<"satr : "; getline(cin, s1);
+
+ //string s2=s1.substr(2,2)+s1.substr(s1.size()-1)+s1.substr(7,7);
+ //cout<<s2<<endl;
+
+ cout<<satr(s1)<<endl;
+
+
+ main();
+ return 0;
+}
+ -->
+
